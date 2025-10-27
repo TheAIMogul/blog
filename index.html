@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micah Berkley | AI Solutions Architect & #TheAIMogul | Miami</title>
+    <meta name="description" content="Miami Herald featured AI expert. From Google to Fashion Nova to Miami's streets—architecting AI solutions generating millions while teaching communities to secure the bag. Voice AI handling 1000+ calls daily.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0e27;
+        }
+        
+        /* Sticky Navigation */
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            color: #00ff88;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .nav-btn:hover {
+            background: rgba(0, 255, 136, 0.2);
+            border-color: #00ff88;
+            transform: translateY(-2px);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0 60px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.15) 0%, transparent 50%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .label {
+            color: #00ff88;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 8vw, 3.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+        
+        h1 .highlight {
+            color: #00ff88;
+        }
+        
+        .hero-subhead {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .stats-quick {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+            padding: 25px;
+            background: rgba(0, 255, 136, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-num {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #00ff88;
+            display: block;
+        }
+        
+        .stat-text {
+            font-size: 0.85rem;
+            color: #999;
+        }
+        
+        .cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 35px;
+        }
+        
+        .btn {
+            padding: 16px 28px;
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #00ff88 0%, #00cc6e 100%);
+            color: #0a0e27;
+            box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0, 255, 136, 0.5);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #00ff88;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        h2 {
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        
+        h2 .highlight {
+            color: #00ff88;
+        }
+        
+        h3 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .section-intro {
+            font-size: clamp(1rem, 2.5vw, 1.15rem);
+            color: #b0b0b0;
+            margin-bottom: 50px;
+            line-height: 1.8;
+            max-width: 900px;
+        }
+        
+        /* Cards & Grids */
+        .grid {
+            display: grid;
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        
+        .card {
+            background: rgba(26, 31, 58, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00ff88;
+            box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
+        }
+        
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .card .icon {
+            font-size: 1.6rem;
+        }
+        
+        .card p {
+            color: #b0b0b0;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .card ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .card li {
+            color: #b0b0b0;
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #00ff88;
+            font-weight: bold;
+        }
+        
+        /* Feature Box */
+        .feature-box {
+            padding: 40px;
+            background: rgba(0, 255, 136, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            margin: 50px 0;
+        }
+        
+        .feature-box h3 {
+            color: #00ff88;
+            margin-bottom: 20px;
+        }
+        
+        .feature-box p {
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* Quote Block */
+        .quote-block {
+            padding: 40px;
+            background: rgba(138, 43, 226, 0.05);
+            border-left: 4px solid #00ff88;
+            border-radius: 8px;
+            margin: 50px 0;
+        }
+        
+        .quote-block blockquote {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            font-style: italic;
+            color: #e0e0e0;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .quote-block .author {
+            color: #00ff88;
+            font-weight: 700;
+        }
+        
+        /* Recognition Items */
+        .recognition-item {
+            background: rgba(26, 31, 58, 0.5);
+            border-left: 4px solid #00ff88;
+            padding: 25px 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .recognition-item h4 {
+            color: #00ff88;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+        
+        .recognition-item p {
+            color: #b0b0b0;
+            line-height: 1.7;
+        }
+        
+        .recognition-source {
+            color: #888;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        /* Workshop Topics */
+        .workshop-topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .topic-card {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 255, 136, 0.05) 100%);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .topic-card:hover {
+            transform: translateY(-3px);
+            border-color: #00ff88;
+        }
+        
+        .topic-card h4 {
+            color: #00ff88;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .topic-card p {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Footer */
+        footer {
+            background: rgba(10, 14, 39, 0.95);
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            color: #00ff88;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #b0b0b0;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .footer-section a:hover {
+            color: #00ff88;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00ff88;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .social-btn:hover {
+            background: #00ff88;
+            color: #0a0e27;
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            color: #666;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .nav-container {
+                gap: 8px;
+            }
+            
+            .nav-btn {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 60px 0 40px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+            
+            .stats-quick {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .feature-box,
+            .quote-block {
+                padding: 25px;
+            }
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        
+        .mb-40 {
+            margin-bottom: 40px;
+        }
+        
+        .mt-40 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="#professional" class="nav-btn">Background</a>
+            <a href="#business" class="nav-btn">AI Solutions</a>
+            <a href="#community" class="nav-btn">Community</a>
+            <a href="#recognition" class="nav-btn">Recognition</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="label">AI Solutions Architect | Miami Herald Featured | #TheAIMogul</span>
+                <h1>
+                    <span class="highlight">Micah Berkley</span>:<br>
+                    The AI Mogul Transforming Business & Community
+                </h1>
+                <p class="hero-subhead">
+                    From Google Cloud to Fashion Nova to Miami's streets—I architect AI solutions that generate millions in revenue while teaching underserved communities to secure the bag. Miami Herald front page featured, Adobe AI Change Maker, Black Enterprise Top 10 Under 35 in Tech.
+                </p>
+                
+                <div class="stats-quick">
+                    <div class="stat-item">
+                        <span class="stat-num">1000+</span>
+                        <span class="stat-text">AI Calls Daily</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">18%</span>
+                        <span class="stat-text">Cost Reduction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">Millions</span>
+                        <span class="stat-text">Generated</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">100s</span>
+                        <span class="stat-text">Trained Weekly</span>
+                    </div>
+                </div>
+                
+                <div class="cta-group">
+                    <a href="#recognition" class="btn btn-primary">📢 Book Me to Speak</a>
+                    <a href="#community" class="btn btn-secondary">🎓 Free GP Tuesdays</a>
+                    <a href="tel:+13126628212" class="btn btn-secondary">📞 (312) 662-8212</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: PROFESSIONAL ROLES & BACKGROUND -->
+    <section id="professional" style="background: #0a0e27;">
+        <div class="container">
+            <span class="label">The Journey</span>
+            <h2>From the Bronx to Brown University to <span class="highlight">Building AI Empires</span></h2>
+            <p class="section-intro">
+                Born in Russia, raised in the Bronx, emancipated at 13, adopted by Brown University alumni pastors—my story isn't typical, and neither is my approach. At 13, I became one of the youngest Microsoft Certified Systems Engineers in history. By my 20s, I was architecting cloud solutions for Google. By my 30s, I was generating millions for Fashion Nova. Now? I'm making AI accessible and profitable for everyone—from Fortune 500s to kids in Overtown.
+            </p>
+            
+            <h3 style="margin-top: 60px; margin-bottom: 30px;">The Enterprise Years: Where I Built My Foundation</h3>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3><span class="icon">🔷</span> Google (2016-2018)</h3>
+                    <p style="color: #00ff88; font-weight: 600; margin-bottom: 10px;">Cloud Architect & Site Reliability Engineer</p>
+                    <ul>
+                        <li>Ensured reliability and uptime of Google Cloud services</li>
+                        <li>Implemented proactive monitoring systems and fault-tolerant solutions</li>
+                        <li>Worked at cutting edge of cloud infrastructure at scale</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><span class="icon">🚗</span> BMW of North America (2018-2021)</h3>
+                    <p style="color: #00ff88; font-weight: 600; margin-bottom: 10px;">Site Reliability Manager/Admin & Azure Cloud Architect</p>
+                    <ul>
+                        <li>Revolutionized DevOps with SRE practices</li>
+                        <li>Improved consumer NPS by 2x</li>
+                        <li>Managed BMW's Azure cloud infrastructure</li>
+                        <li>Integrated on-premises, cloud, and vehicle systems</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><span class="icon">👗</span> Fashion Nova (2019-2021)</h3>
+                    <p style="color: #00ff88; font-weight: 600; margin-bottom: 10px;">Global Marketing Data Scientist</p>
+                    <ul>
+                        <li>Revolutionized marketing with big data and AI</li>
+                        <li>Reduced ad spend while generating millions</li>
+                        <li>Pioneered AI-driven performance marketing</li>
+                        <li>Built predictive models that transformed e-commerce</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><span class="icon">🎓</span> Education & Certifications</h3>
+                    <ul>
+                        <li><strong>Brown University</strong> - BS Computer Science</li>
+                        <li><strong>MCSE</strong> - Age 13 (youngest in history)</li>
+                        <li><strong>IAACN</strong> - AI/Cloud Native</li>
+                        <li><strong>MSCAP</strong> - App IT Certification</li>
+                        <li><strong>OpenAI</strong> - Affiliate Partner</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 60px; margin-bottom: 30px;">Current Ventures: Where I'm Building the Future</h3>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>🚀 AI Success Partners & nodable.ai</h3>
+                    <p><strong style="color: #00ff88;">Founder</strong></p>
+                    <p>Enterprise AI implementation and Voice AI solutions. Currently handling 1000+ AI calls daily with zero human intervention, slashing operational costs by 18% for clients in insurance, healthcare, and beyond.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🌴 Biscayne AI</h3>
+                    <p><strong style="color: #00ff88;">Co-Founder</strong></p>
+                    <p>Miami's AI innovation hub—connecting tech leaders, entrepreneurs, and community members to accelerate AI adoption across South Florida.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🎓 GP Tuesdays</h3>
+                    <p><strong style="color: #00ff88;">Co-Founder</strong></p>
+                    <p>Free weekly AI workshops every Tuesday teaching hundreds of Miamians how to leverage AI for business and personal growth. No prerequisites. Just passion to learn.</p>
+                </div>
+            </div>
+            
+            <div class="feature-box" style="margin-top: 60px;">
+                <h3>Awards & Recognition Timeline</h3>
+                <div class="grid grid-2">
+                    <div>
+                        <p><strong style="color: #00ff88;">2024</strong> - Adobe AI Change Maker</p>
+                        <p><strong style="color: #00ff88;">2024</strong> - Top Miami AI Expert</p>
+                        <p><strong style="color: #00ff88;">2024</strong> - Black Enterprise Nominee</p>
+                        <p><strong style="color: #00ff88;">2023</strong> - Miami Herald Front Page Feature</p>
+                    </div>
+                    <div>
+                        <p><strong style="color: #00ff88;">2017</strong> - Black Enterprise Top 10 Under 35 in Tech</p>
+                        <p><strong style="color: #00ff88;">2017</strong> - Chicago Disruptor Award</p>
+                        <p><strong style="color: #00ff88;">2012</strong> - Providence Business News Top 30 Under 30</p>
+                        <p><strong style="color: #00ff88;">2014-2022</strong> - 12+ Chicago Community Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: CORE AI BUSINESS AREAS -->
+    <section id="business" style="background: linear-gradient(180deg, #0a0e27 0%, #1a1f3a 100%);">
+        <div class="container">
+            <span class="label">How I Help You Win</span>
+            <h2>AI Solutions That Don't Just Solve Problems—<br><span class="highlight">They Predict Them and Generate Revenue</span></h2>
+            <p class="section-intro">
+                I don't do theory. I do implementation. Here's exactly how I transform businesses using AI—from lead generation that converts to Voice AI that handles 1000+ calls daily without a single human.
+            </p>
+            
+            <!-- Voice AI -->
+            <div class="card mb-40">
+                <h3><span class="icon">🎙️</span> Voice AI Revolution</h3>
+                <p style="color: #00ff88; font-weight: 600;">Custom Voice AI systems that handle customer calls, appointments, follow-ups, and sales conversations autonomously using platforms like Bland.ai and proprietary AI architectures.</p>
+                
+                <div style="background: rgba(0, 255, 136, 0.05); padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <p><strong>Real Results:</strong></p>
+                    <ul>
+                        <li>1000+ calls daily with zero human intervention</li>
+                        <li>18% operational cost reduction</li>
+                        <li>Transforming call centers in insurance, healthcare, real estate</li>
+                        <li>Potential 10k+ monthly revenue streams for clients</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Industries I've Transformed:</strong> Insurance (policy renewals, claims), Healthcare (appointments, patient follow-ups), Real Estate (lead qualification), Legal Services (intake calls)</p>
+                
+                <p style="margin-top: 20px;"><strong style="color: #00ff88;">Book me for:</strong> Voice AI strategy sessions, implementation consulting, or workshops on deploying Voice AI in your industry.</p>
+            </div>
+            
+            <!-- Lead Gen -->
+            <div class="card mb-40">
+                <h3><span class="icon">🎯</span> Lead Generation & Performance Marketing</h3>
+                <p style="color: #00ff88; font-weight: 600;">AI-powered customer acquisition systems that turn data into gold. I've generated millions for clients using micro-segmentation, autonomous ad systems, and predictive analytics.</p>
+                
+                <p style="margin-top: 15px;"><strong>My Arsenal:</strong></p>
+                <ul>
+                    <li><strong>Autonomous Ad Systems:</strong> WordStream, Smarty integration with AI optimization</li>
+                    <li><strong>Micro-Segmentation:</strong> B2B targeting, omni-channel integration</li>
+                    <li><strong>AI-Powered Nurture:</strong> Drift, LGT, automated follow-up sequences</li>
+                    <li><strong>Dynamic Landing Pages:</strong> Geo-specific content, form optimization</li>
+                    <li><strong>Micro SaaS Signups:</strong> Automated funnel creation and conversion tracking</li>
+                </ul>
+                
+                <div style="background: rgba(138, 43, 226, 0.1); padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #00ff88;">
+                    <p><strong style="color: #00ff88;">Fashion Nova Success:</strong> As Global Marketing Data Scientist, I reduced ad spend while generating millions in revenue through AI-driven targeting and predictive modeling.</p>
+                </div>
+            </div>
+            
+            <!-- Content AI -->
+            <div class="card mb-40">
+                <h3><span class="icon">🎨</span> Content & Creative AI</h3>
+                <p style="color: #00ff88; font-weight: 600;">Using AI to create compelling visual and written content at scale—from restaurant menu photos that increase profits 25% to managing 11+ concurrent live streams.</p>
+                
+                <p style="margin-top: 15px;"><strong>Tools & Techniques:</strong></p>
+                <ul>
+                    <li><strong>AI Image Generation:</strong> Midjourney, Ideogram, Stable Diffusion</li>
+                    <li><strong>Visual Enhancement:</strong> Magnific.ai, upscaling, product photography</li>
+                    <li><strong>Content Automation:</strong> Canva AI, LinkedIn automation, multi-platform posting</li>
+                    <li><strong>AI Video:</strong> 11+ live streams running concurrently with AI-generated content</li>
+                    <li><strong>Product Photography:</strong> 2D/3D mode captures for e-commerce</li>
+                </ul>
+                
+                <div style="background: rgba(0, 255, 136, 0.1); padding: 25px; border-radius: 12px; margin-top: 25px;">
+                    <h4 style="color: #00ff88; margin-bottom: 15px;">🏆 Case Study: Wynwood Restaurant</h4>
+                    <p>Created 50 AI-generated menu photos in 24 hours using Midjourney. Result: <strong style="color: #00ff88;">25% profit increase in 2 weeks</strong>. Cost to restaurant: minimal. Impact: transformative.</p>
+                    
+                    <h4 style="color: #00ff88; margin: 20px 0 15px;">🌍 Global Impact: Lagos, Nigeria</h4>
+                    <p>Taught a woman AI menu creation techniques. Her income jumped from <strong style="color: #00ff88;">$150/month to $3,200/year</strong> serving UK restaurants on JustEat.</p>
+                </div>
+            </div>
+            
+            <!-- Automation -->
+            <div class="card mb-40">
+                <h3><span class="icon">🤖</span> Workflow Automation & Business Intelligence</h3>
+                <p style="color: #00ff88; font-weight: 600;">Building intelligent systems that automate repetitive tasks, predict business needs, and provide actionable insights.</p>
+                
+                <ul>
+                    <li><strong>Zapier/Make.com Mastery:</strong> 10,000+ automation rules deployed</li>
+                    <li><strong>Custom AI Workflows:</strong> Proprietary policies and decision trees</li>
+                    <li><strong>Data Analytics:</strong> 23+ tool integrations for comprehensive BI</li>
+                    <li><strong>Bulk QA & Testing:</strong> Automated quality assurance systems</li>
+                    <li><strong>API Integrations:</strong> Connecting disparate systems seamlessly</li>
+                </ul>
+                
+                <p style="margin-top: 20px; padding: 15px; background: rgba(0, 255, 136, 0.05); border-radius: 8px;"><strong style="color: #00ff88;">BMW Success:</strong> Implemented SRE practices that improved consumer NPS by 2x while streamlining DevOps operations.</p>
+            </div>
+            
+            <!-- Workshops -->
+            <div class="card">
+                <h3><span class="icon">🎓</span> AI Education & Workshops</h3>
+                <p style="color: #00ff88; font-weight: 600; font-size: 1.1rem;">"Street smarts meet tech savvy." I don't teach theory—I show you how to make money TODAY.</p>
+                <p>My students aren't just learning AI; they're securing jobs, starting businesses, and generating hundreds of dollars daily.</p>
+                
+                <div class="workshop-topics mt-40">
+                    <div class="topic-card">
+                        <h4>AI Avatar Creation</h4>
+                        <p>Build realistic avatars for marketing and branding</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>AI for Social Media Ads</h4>
+                        <p>Create converting ad content in minutes</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Voice AI Implementation</h4>
+                        <p>Deploy AI phone systems for your business</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>AI-Powered Automation</h4>
+                        <p>Zapier, Make.com, and custom workflows</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Prompt Engineering</h4>
+                        <p>Master getting AI to do what you want</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>AI for E-commerce</h4>
+                        <p>Product photography, descriptions, optimization</p>
+                    </div>
+                </div>
+                
+                <div class="quote-block mt-40">
+                    <blockquote>"Micah Berkley stands out as a dynamic and compelling speaker, renowned for his practical, urban-centered approach paired with an untethered and brashly honest style. His presentations, infused with real-world insights and a no-holds-barred attitude, have captivated audiences at various events."</blockquote>
+                </div>
+                
+                <div class="cta-group mt-40">
+                    <a href="#recognition" class="btn btn-primary">📢 Book Me to Speak</a>
+                    <a href="#community" class="btn btn-secondary">🎓 Attend GP Tuesdays</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: COMMUNITY & ADVOCACY -->
+    <section id="community" style="background: #0a0e27;">
+        <div class="container">
+            <span class="label">Giving Back</span>
+            <h2>Using AI to Transform Lives, <span class="highlight">Not Just Bottom Lines</span></h2>
+            <p class="section-intro">
+                I've made millions for companies. But my proudest work? Teaching kids in Overtown to generate hundreds of dollars daily using AI. Empowering a woman in Lagos to 20x her income. Earning 12 community awards from Chicago for youth entrepreneurship. Technology without community impact is just code.
+            </p>
+            
+            <div class="grid grid-2 mb-40">
+                <div class="card">
+                    <h3><span class="icon">🏆</span> The Patterson Project</h3>
+                    <p style="color: #00ff88; font-weight: 600;">Chicago Youth Incubator (2014-2022)</p>
+                    <p>Between 2014-2022, I ran a youth entrepreneur incubator in Chicago while serving as a foster father. The Patterson Project taught at-risk youth how to build businesses, think strategically, and create financial independence.</p>
+                    <p style="margin-top: 15px;"><strong>Recognition:</strong></p>
+                    <ul>
+                        <li>12+ Community Awards from City of Chicago</li>
+                        <li>Multiple Compassion Awards for youth advocacy</li>
+                        <li>Recognition from Big Brothers Big Sisters of Chicago</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><span class="icon">🎓</span> GP Tuesdays</h3>
+                    <p style="color: #00ff88; font-weight: 600;">Miami's Free AI Education Movement</p>
+                    <p><strong>Every Tuesday</strong><br>
+                    2125 Biscayne Blvd, Miami, FL 33137<br>
+                    📧 info@gptuesdays.com</p>
+                    <p style="margin-top: 15px;"><strong>Who Attends:</strong></p>
+                    <ul>
+                        <li>At-risk youth from Overtown and Liberty City</li>
+                        <li>Minority entrepreneurs</li>
+                        <li>Career changers</li>
+                        <li>Small business owners</li>
+                        <li>Anyone hungry to learn AI</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-box">
+                <h3>💰 Real Story: Overtown Youth Empowerment</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    Taught dozens of kids from Overtown how to use AI to create content for restaurants in Wynwood. They're now empowering themselves to <strong style="color: #00ff88;">generate hundreds of dollars daily</strong> using virtually free tools and a laptop. This is what accessible AI looks like.
+                </p>
+            </div>
+            
+            <div class="grid grid-2 mt-40">
+                <div class="card">
+                    <h3>🌍 Global Reach</h3>
+                    <p style="color: #00ff88; font-weight: 600;">From Miami to the World</p>
+                    <p><strong>Lagos, Nigeria Success Story:</strong> A woman reached out after seeing my work teaching Miami youth. She practiced AI menu creation and started offering services to UK restaurants via JustEat. Her income went from <strong style="color: #00ff88;">$150/month to $3,200/year</strong>.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📊 Community Impact Stats</h3>
+                    <ul>
+                        <li><strong>12+</strong> Community Awards (Chicago)</li>
+                        <li><strong>Hundreds</strong> Trained Weekly</li>
+                        <li><strong>$100s-$1000s</strong> Students earning daily</li>
+                        <li><strong>Global</strong> Impact (Miami to Lagos to UK)</li>
+                        <li><strong>Weekly</strong> Free workshops</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="quote-block mt-40">
+                <blockquote>
+                    "AI is the future, but it's only meaningful if everyone has access to it. My mission is to ensure underserved communities aren't left behind in this technological shift."
+                </blockquote>
+                <p class="author">— Micah Berkley, #TheAIMogul</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: RECOGNITION & PROJECTS -->
+    <section id="recognition" style="background: linear-gradient(180deg, #1a1f3a 0%, #0a0e27 100%);">
+        <div class="container">
+            <span class="label">Media & Recognition</span>
+            <h2>From Miami Herald to Black Enterprise—<br><span class="highlight">Why Industry Leaders Trust My Vision</span></h2>
+            <p class="section-intro">
+                When you combine Ivy League education, Google/BMW/Fashion Nova experience, and an unrelenting commitment to accessibility—people notice. Here's where I've been recognized and why it matters for your business or event.
+            </p>
+            
+            <div class="recognition-item">
+                <h4>🗞️ Miami Herald Front Page Feature (December 2023)</h4>
+                <p><strong>"'We could do this:' Black entrepreneur Micah Berkley blazes a path with AI, hopes others will follow"</strong></p>
+                <p>Featured on the front page of the Technology Section for innovative AI implementation in lead generation, branding, and empowering underserved communities. Wynwood restaurant case study showing 25% profit increase documented.</p>
+                <p class="recognition-source">Miami Herald, Technology Section, December 2023</p>
+            </div>
+            
+            <div class="recognition-item">
+                <h4>🎖️ Adobe AI Change Maker (January 2024)</h4>
+                <p>Named Adobe AI Change Maker for development of AI best friend voice telephone companion for young people suffering from depression, transforming lead generation for dozens of Miami companies, and generating millions in revenue through AI integration.</p>
+                <p class="recognition-source">Adobe, 2024</p>
+            </div>
+            
+            <div class="recognition-item">
+                <h4>📰 Benzinga Feature (July 2024)</h4>
+                <p><strong>"Micah Berkley, Miami's AI Mogul, Unveils Industry-Transforming Voice AI Revolution"</strong></p>
+                <p>Highlighted for Voice AI handling 1000+ calls daily with zero human intervention, 18% operational cost reduction, and transforming call centers and insurance operations. Potential 10k+ monthly revenue streams for clients documented.</p>
+                <p class="recognition-source">Benzinga, July 2024</p>
+            </div>
+            
+            <div class="recognition-item">
+                <h4>🏅 Industry Awards Timeline</h4>
+                <div class="grid grid-2" style="margin-top: 20px;">
+                    <div>
+                        <p><strong style="color: #00ff88;">2024</strong> - Top Miami AI Expert</p>
+                        <p><strong style="color: #00ff88;">2024</strong> - Black Enterprise Nominee</p>
+                        <p><strong style="color: #00ff88;">2017</strong> - Black Enterprise Top 10 Under 35 in Tech</p>
+                    </div>
+                    <div>
+                        <p><strong style="color: #00ff88;">2017</strong> - Chicago Disruptor Award</p>
+                        <p><strong style="color: #00ff88;">2012</strong> - Providence Business News Top 30 Under 30</p>
+                        <p><strong style="color: #00ff88;">2014-2022</strong> - 12+ Chicago Community Awards</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-box mt-40">
+                <h3>🎤 Speaking & Panel Experience</h3>
+                <div class="grid grid-2">
+                    <div>
+                        <p><strong style="color: #00ff88;">BITE-CON Week</strong> - Panelist<br>
+                        "How can AI diversify and expand the talent pool and workforce of BIPOC professionals and experts?"</p>
+                        
+                        <p style="margin-top: 15px;"><strong style="color: #00ff88;">Ascend: The AI Workshop</strong> - Lead Instructor<br>
+                        Hands-on AI workshop for entrepreneurs and business professionals</p>
+                    </div>
+                    <div>
+                        <p><strong style="color: #00ff88;">Corporate Events</strong> - Keynote Speaker<br>
+                        Fortune 500 companies, tech conferences, and university lectures</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Speaking Style:</strong> "Dynamic and compelling speaker, renowned for his practical, urban-centered approach paired with an untethered and brashly honest style."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-40" style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(138, 43, 226, 0.1) 100%); border: 2px solid #00ff88;">
+                <h3 style="text-align: center; margin-bottom: 25px;">📢 Why Book Me to Speak?</h3>
+                <div class="grid grid-2">
+                    <ul>
+                        <li><strong>Proven Track Record:</strong> Google, BMW, Fashion Nova experience</li>
+                        <li><strong>Real Results:</strong> Millions generated, 25% profit increases documented</li>
+                        <li><strong>Media Validated:</strong> Miami Herald, Benzinga, Adobe recognition</li>
+                        <li><strong>Engaging Style:</strong> "Untethered and brashly honest"—audiences remember me</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Technical + Accessible:</strong> Bridge deep tech with everyday application</li>
+                        <li><strong>Community Proven:</strong> Teaching hundreds weekly, transforming lives globally</li>
+                        <li><strong>Business Impact:</strong> 18% cost reductions, 1000+ AI calls daily, measurable ROI</li>
+                        <li><strong>Custom Content:</strong> Tailored to your audience and objectives</li>
+                    </ul>
+                </div>
+                
+                <div class="cta-group mt-40" style="justify-content: center;">
+                    <a href="mailto:speaking@aisuccesspartners.com" class="btn btn-primary">📧 Book for Speaking</a>
+                    <a href="tel:+13126628212" class="btn btn-secondary">📞 Call: (312) 662-8212</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT/CTA SECTION -->
+    <section style="background: #0a0e27; padding: 100px 0;">
+        <div class="container text-center">
+            <span class="label">Let's Build Together</span>
+            <h2>Ready to Transform Your Business<br>with <span class="highlight">Strategic AI</span>?</h2>
+            <p style="max-width: 700px; margin: 30px auto 40px; color: #b0b0b0; font-size: 1.2rem; line-height: 1.8;">
+                Whether you need enterprise AI architecture, Voice AI implementation, marketing automation, speaking engagements, or want to bring AI education to your community—let's talk about making AI work for you.
+            </p>
+            
+            <div class="grid grid-3" style="max-width: 900px; margin: 50px auto;">
+                <div class="card text-center">
+                    <h3>🎤 Speaking</h3>
+                    <p style="margin: 15px 0;">Book me for keynotes, panels, workshops</p>
+                    <a href="mailto:speaking@aisuccesspartners.com" style="color: #00ff88; text-decoration: none; font-weight: 600;">speaking@aisuccesspartners.com</a>
+                </div>
+                
+                <div class="card text-center">
+                    <h3>💼 Consulting</h3>
+                    <p style="margin: 15px 0;">Enterprise AI implementation & strategy</p>
+                    <a href="mailto:consulting@aisuccesspartners.com" style="color: #00ff88; text-decoration: none; font-weight: 600;">consulting@aisuccesspartners.com</a>
+                </div>
+                
+                <div class="card text-center">
+                    <h3>🎓 GP Tuesdays</h3>
+                    <p style="margin: 15px 0;">Free weekly AI workshops in Miami</p>
+                    <a href="https://gptuesdays.com" target="_blank" style="color: #00ff88; text-decoration: none; font-weight: 600;">GPTuesdays.com</a>
+                </div>
+            </div>
+            
+            <div class="cta-group" style="justify-content: center; margin-top: 50px;">
+                <a href="tel:+13126628212" class="btn btn-primary">📞 Call: (312) 662-8212</a>
+                <a href="#professional" class="btn btn-secondary">↑ Back to Top</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Micah Berkley</h3>
+                    <p><strong>#TheAIMogul</strong></p>
+                    <p>AI Solutions Architect & Evangelist</p>
+                    <p style="margin-top: 15px;">Making AI Accessible & Profitable for All</p>
+                    <p style="margin-top: 15px;">📍 Miami, Florida</p>
+                    <p>📞 (312) 662-8212</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#business">Voice AI Solutions</a>
+                    <a href="#business">Lead Generation Automation</a>
+                    <a href="#business">Content & Marketing AI</a>
+                    <a href="#business">Enterprise Architecture</a>
+                    <a href="#business">Workshops & Training</a>
+                    <a href="#recognition">Speaking Engagements</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <a href="#community">GP Tuesdays (Free Workshops)</a>
+                    <p style="font-size: 0.9rem;">📍 2125 Biscayne Blvd<br>Miami, FL 33137<br>Every Tuesday</p>
+                    <a href="#community">Youth Programs</a>
+                    <a href="#recognition">Media Features</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <a href="https://linkedin.com/in/micahberkley" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/micahberkley" target="_blank">Twitter/X @micahberkley</a>
+                    <a href="https://aisuccesspartners.com" target="_blank">AI Success Partners</a>
+                    <a href="https://nodable.ai" target="_blank">nodable.ai</a>
+                    <a href="https://gptuesdays.com" target="_blank">GPTuesdays.com</a>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/micahberkley" target="_blank" class="social-btn">in</a>
+                        <a href="https://twitter.com/micahberkley" target="_blank" class="social-btn">𝕏</a>
+                        <a href="https://github.com/micahberkley" target="_blank" class="social-btn">gh</a>
+                        <a href="mailto:hello@aisuccesspartners.com" class="social-btn">✉</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p style="font-weight: 600; margin-bottom: 10px;">Micah Berkley | AI Solutions Architect | #TheAIMogul</p>
+                <p>Russia → Bronx → Chicago → Miami | Brown University | MCSE | Google | BMW | Fashion Nova</p>
+                <p style="margin-top: 10px;">Miami Herald Featured | Adobe AI Change Maker | Black Enterprise Top 10 Under 35</p>
+                <p style="margin-top: 15px; font-size: 0.85rem;">© 2025 Micah Berkley. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
